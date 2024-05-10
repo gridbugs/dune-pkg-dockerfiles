@@ -13,4 +13,7 @@ docker run -p8080:8080 --rm -it dune-pkg-demo-bonsai
 ## Ocaml.org
 
 ```
+docker build . -f ocamlorg.dockerfile -t dune-pkg-demo-ocamlorg
+docker run -p8080:8080 --rm -it dune-pkg-demo-ocamlorg
 ```
+...then go to 0.0.0.0:8080 in your browser.

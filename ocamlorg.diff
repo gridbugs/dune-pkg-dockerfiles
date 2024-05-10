@@ -1,0 +1,31 @@
+diff --git a/dune-project b/dune-project
+index c14427a5..ac923cf9 100644
+--- a/dune-project
++++ b/dune-project
+@@ -24,13 +24,25 @@
+ 
+ (using mdx 0.1)
+ 
++(pin
++  (url "git+https://github.com/tmattio/opam-tailwindcss#3e60fc32bbcf82525999d83ad0f395e16107026b")
++  (package
++    (name tailwindcss)
++    (version dev)))
++
++(pin
++  (url "git+https://github.com/tarides/olinkcheck")
++  (package
++    (name olinkcheck)
++    (version dev)))
++
+ (package
+  (name ocamlorg)
+  (synopsis "Official OCaml website")
+  (description
+   "This repository contains the server that serves the official OCaml website at https://ocaml.org.")
+  (depends
+-  (ocaml
++  (ocaml-system
+    (>= 4.14.0))
+   dune
+   cohttp

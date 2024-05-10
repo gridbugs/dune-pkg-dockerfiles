@@ -23,7 +23,7 @@ RUN patch -p1 < bonsai.diff # replaces ocaml dep with ocaml-system
 # Install depexts needed by bonsai
 USER root
 RUN apt-get install -y pkg-config libgmp-dev libffi-dev openssl libssl-dev zlib1g-dev
-user user
+USER user
 
 # Generate lockdir and build hello_world example (including dependencies)
 RUN opam exec dune pkg lock
