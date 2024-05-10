@@ -1,0 +1,13 @@
+diff --git a/bonsai.opam b/bonsai.opam
+index 30b8ffc..769eae0 100644
+--- a/bonsai.opam
++++ b/bonsai.opam
+@@ -11,7 +11,7 @@ build: [
+   ["dune" "build" "-p" name "-j" jobs]
+ ]
+ depends: [
+-  "ocaml"                    {>= "4.14.0"}
++  "ocaml-system"             {>= "4.14.0"}
+   "async"                    {>= "v0.16" & < "v0.17"}
+   "async_durable"            {>= "v0.16" & < "v0.17"}
+   "async_extra"              {>= "v0.16" & < "v0.17"}
